@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>ex1</title>
   </head>
   <body>
     <div class="container">
-        <button type="button" class="btn btn-success my-4">
+        <button type="button" class="btn btn-success my-4" id="btn-add">
             <i class="bi bi-plus-circle-fill mx-1"></i>            
             Add Row
         </button>
-        <table class="table table-bordered">
+        <table class="table table-bordered" id="myTable">
             <thead class="bg-success text-white">
               <tr>
                 <th scope="col">Actions</th>
@@ -23,38 +24,40 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td scope="row">
-                    <button type="button" class="btn btn-danger">
-                        <i class="bi bi-trash-fill mx-1"></i>                       
-                        Delete
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                        <i class="bi bi-sticky-fill mx-1"></i>
-                        clone
-                    </button>
-                </td>
-                <td>
-                    <input type="number" class="form-control" id="inputNumber" name="number">
-                </td>
-                <td>
-                    <input type="text" class="form-control" id="inputText" name="text">
-                </td>
-                <td>
-                    <input class="form-check-input" type="radio" name="new" id="typeNew">
-                    <label class="form-check-label me-4" for="typeNew">
-                        New
-                    </label>
-                    <input class="form-check-input" type="radio" name="inprogess" id="typeInprogess">
-                    <label class="form-check-label me-4" for="typeInprogess">
-                        In progess
-                    </label>
-                    <input class="form-check-input" type="radio" name="confirmed" id="typeConfirmed">
-                    <label class="form-check-label me-4" for="typeConfirmed">
-                        Confirmed
-                    </label>
-                </td>
-              </tr>
+                <div class="item">
+                    <tr class="first">
+                        <td scope="row">
+                            <button type="button" class="btn btn-danger">
+                                <i class="bi bi-trash-fill mx-1"></i>                       
+                                Delete
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                <i class="bi bi-sticky-fill mx-1"></i>
+                                clone
+                            </button>
+                        </td>
+                        <td>
+                            <input type="number" class="form-control" id="inputNumber" name="number">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" id="inputText" name="text">
+                        </td>
+                        <td>
+                            <input class="form-check-input" type="radio" name="status" id="typeNew">
+                            <label class="form-check-label me-4" for="typeNew">
+                                New
+                            </label>
+                            <input class="form-check-input" type="radio" name="status" id="typeInprogess">
+                            <label class="form-check-label me-4" for="typeInprogess">
+                                In progess
+                            </label>
+                            <input class="form-check-input" type="radio" name="status" id="typeConfirmed">
+                            <label class="form-check-label me-4" for="typeConfirmed">
+                                Confirmed
+                            </label>
+                        </td>
+                    </tr>
+                </div>
             </tbody>
         </table>
         <p>All rows number : <span>1</span></p>
@@ -62,6 +65,5 @@
     </div>
     <script src="./ex1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
