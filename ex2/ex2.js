@@ -1,9 +1,9 @@
-$(".ul-first > li  a").click(function(){
+$("#accordion > li > div").click(function(){
 
 	if(false == $(this).next().is(':visible')) {
-		$('.ul-first ul').slideUp(300);
+		$('#accordion ul').slideUp(300);
 	}
 	$(this).next().slideToggle(300);
 });
 
-$('.ul-first ul:eq(0)').show();
+$('#accordion ul:eq(0)').show();

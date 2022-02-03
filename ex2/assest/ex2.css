@@ -1,19 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #accordion {
 	list-style: none;
-	padding: 0 0 0 0;
-	width: 170px;
+    width: 80vw;
+    margin-left: 100px;
 }
 #accordion div {
 	display: block;
-	background-color: #FF9927;
+	background-color: #000000;
 	font-weight: bold;
 	margin: 1px;
 	cursor: pointer;
 	padding: 20px;
 	list-style: circle;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
 	border-radius: 10px;
+    color: white;
 }
 #accordion ul {
 	list-style: none;
@@ -25,8 +30,11 @@
 #accordion ul li {
 	font-weight: normal;
 	cursor: auto;
-	background-color: #fff;
-	padding: 0 0 0 7px;
+	background-color: rgb(228, 161, 18);
+	padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
 }
 #accordion a {
 	text-decoration: none;
@@ -34,3 +42,4 @@
 #accordion a:hover {
 	text-decoration: underline;
 }
+@
