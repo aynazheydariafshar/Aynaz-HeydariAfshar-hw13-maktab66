@@ -6,8 +6,8 @@ $(document).ready(function(){
         $("tbody").prepend(
         '<tr>'+
             '<td scope="row">'+
-                '<button type="button" class="btn btn-danger deleted mx-1"><i class="bi bi-trash-fill mx-1"></i>Delete</button>'+
-                '<button type="button" class="btn btn-primary clone mx-1"><i class="bi bi-sticky-fill mx-1"></i>clone</button>'+
+                '<button type="button" class="btn btn-danger deleted mx-2"><i class="bi bi-trash-fill mx-1"></i>Delete</button>'+
+                '<button type="button" class="btn btn-primary clone mx-2"><i class="bi bi-sticky-fill mx-1"></i>clone</button>'+
             '</td>'+
             '<td>'+
                 '<input type="number" class="form-control input-check" id="inputNumber" name="number">'+
