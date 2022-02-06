@@ -16,12 +16,12 @@ $(document).ready(function(){
                 '<input type="text" class="form-control input-check" id="inputText" name="text">'+
             '</td>'+
             '<td>'+
-                '<input class="form-check-input" value="0" type="radio" name="status-' + count + '" id="typeNew">'+
-                '<label class="form-check-label me-4 label-new" for="typeNew">New</label>'+
-                '<input class="form-check-input" value="1" type="radio" name="status -' + count + '" id="typeInprogess">'+
-                '<label class="form-check-label me-4 label-new" for="typeInprogess">In progess</label>'+
-                '<input class="form-check-input" value="2" type="radio" name="status -' + count + '" id="typeConfirmed">'+
-                '<label class="form-check-label me-4 label-confirmed" for="typeConfirmed">Confirmed</label>'+
+                '<input class="form-check-input label-new" value="0" type="radio" name="status-' + count + '" id="typeNew">'+
+                '<label class="form-check-label me-4" for="typeNew">New</label>'+
+                '<input class="form-check-input label-new" value="1" type="radio" name="status -' + count + '" id="typeInprogess">'+
+                '<label class="form-check-label me-4" for="typeInprogess">In progess</label>'+
+                '<input class="form-check-input label-confirmed" value="2" type="radio" name="status -' + count + '" id="typeConfirmed">'+
+                '<label class="form-check-label me-4" for="typeConfirmed">Confirmed</label>'+
             '</td>'+
         '</tr>');
         updateRow(1);
