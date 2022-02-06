@@ -18,9 +18,9 @@ $(document).ready(function(){
             '<td>'+
                 '<input class="form-check-input label-new" value="0" type="radio" name="status-' + count + '" id="typeNew">'+
                 '<label class="form-check-label me-4" for="typeNew">New</label>'+
-                '<input class="form-check-input label-new" value="1" type="radio" name="status -' + count + '" id="typeInprogess">'+
+                '<input class="form-check-input label-new" value="1" type="radio" name="status-' + count + '" id="typeInprogess">'+
                 '<label class="form-check-label me-4" for="typeInprogess">In progess</label>'+
-                '<input class="form-check-input label-confirmed" value="2" type="radio" name="status -' + count + '" id="typeConfirmed">'+
+                '<input class="form-check-input label-confirmed" value="2" type="radio" name="status-' + count + '" id="typeConfirmed">'+
                 '<label class="form-check-label me-4" for="typeConfirmed">Confirmed</label>'+
             '</td>'+
         '</tr>');
@@ -42,7 +42,7 @@ $(document).ready(function(){
         count++;
         for (let item of typeRadioes)
         {
-            $(item).attr('name', 'group-' + count);
+            $(item).attr('name', 'status-' + count);
         }
         $(this).closest('tr').after(rowToClone);
         updateRow(1);
