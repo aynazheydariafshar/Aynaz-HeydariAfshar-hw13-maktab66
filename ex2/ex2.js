@@ -1,6 +1,6 @@
 $("#accordion > li > div").click(function(){
 
-	if(false == $(this).next().is(':visible')) {
+	if(!$(this).next().is(':visible')) {
 		$('#accordion ul').slideUp(700);
 	}
 	$(this).next().slideToggle(700);
